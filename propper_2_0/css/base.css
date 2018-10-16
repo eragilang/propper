@@ -1,0 +1,412 @@
+/*-----------------------------------------------
+//	PacificFrog.com Base Stylesheet
+//	Author:   		Mark Pitman (mark at leafspan dot com)
+//	Media Type: 	Screen
+//	Version Date:  	Oct 9th, 2007
+-------------------------------------------------*/
+
+body {
+	font:						small "Trebuchet MS", Tahoma, Verdana,Sans-serif;
+	color:						#fff;
+	background:					#1D2419;
+	margin:						0;
+	padding:					0;
+	text-align:					center;
+}
+
+#wrap {
+	margin:						50px 0 0 0;
+	display:					none;
+}
+
+#header {
+	height:						264px;
+}
+
+#navbox, #body, #footer, #greenBox {
+	width:						900px;
+	margin:						0 auto;
+}
+
+#logo {
+	display:					block;
+	float:						left;
+	width:						255px;
+	height:						48px;
+	margin:						0 0 0 10px;
+	text-decoration:			none;
+}
+
+#nav {
+	float:						right;
+	width:						440px;
+	height:						63px;
+}
+
+#nav a {
+	display:					block;
+	float:						left;
+	height:						63px;
+}
+
+#nav a span, #validation a span, #body #workContent, #body #aboutContent, #body #contactContent, #body #contactThanks {
+	display:					none;
+}
+
+#greenBox {
+	clear:						both;
+}
+
+#headLeft {
+	float:						left;
+	width:						410px;
+	height:						199px;
+}
+
+#headLeft div#homeText {
+	width:						270px;
+	margin:						55px 0 0 155px;
+	text-align:					justify;
+	font-size:					11px;
+	line-height:				18px;
+	color:#000000;
+}
+
+* html #headLeft div#homeText {
+	margin:						27px 0 0 130px;
+    width:						290px;
+}
+
+
+#headSplit {
+	float:						left;
+	width:						35px;
+	height:						198px;
+	margin:						0 16px 0 30px;
+}
+
+#headRight {
+	float:						left;
+	width:						390px;
+	margin:						5px 0 0 0;
+	color : #000;
+	text-align: left;
+}
+
+#headLeft h1 {
+	display:					none;
+}
+
+#headRight h3 {
+	font-size:13px;
+	font-weight:bold;
+	color:#000;
+	margin:0px;
+}
+
+#folioStrip {
+	width:						390px;
+	height:						100px;
+}
+
+#folioStrip a {
+	display:					block;
+	float:						left;
+	border:						3px solid #fff;
+	width:						40px;
+	height:						40px;
+	text-decoration:			none;
+	margin:						10px 14px 0 0;
+}
+
+#folioStrip a:hover {
+	border:						3px solid #F39B18;
+}
+
+#body {
+	text-align:					left;
+}
+
+#body h1 {
+	display:					block;
+	width:						388px;
+	height:						42px;
+	margin:						0 0 0 50px;
+	padding:					0;
+}
+
+#body h1 span {
+	display:					none;
+}
+
+#body .bodyWrap {
+	width:						794px;
+	margin:						20px auto 0 auto;
+	color:						#ccc;
+	font-size:					11px;
+}
+
+#body .bodyWrap .project {
+	clear:						both;
+	width:						794px;
+	height:						144px;
+	background:					url(project_bg.gif) no-repeat 0 0;
+}
+
+#body .bodyWrap .details {
+	float:						left;
+	width:						312px;
+	height:						128px;
+	font-size:					10px;
+	margin:						8px 0 0 8px;
+}
+
+#body .bodyWrap .preview {
+	display:					block;
+	float:						right;
+	width:						440px;
+	height:						120px;
+	border:						4px solid #fff !important;
+	margin:						8px 8px 0 0;
+	text-decoration:			none;
+}
+
+#body .bodyWrap .previewLink {
+	display:					block;
+	width:						440px;
+	height:						120px;
+	text-decoration:			none;
+}
+
+#body .bodyWrap .previewLaunch {
+	width:						440px;
+	height:						120px;
+	background:					url(preview_over.png) no-repeat 0 0;
+}
+
+#body .bodyWrap .previewGrey {
+	width:						440px;
+	height:						120px;
+}
+
+#body .bodyWrap .project .title {
+	font-family: 				Arial, Helvetica, sans-serif;
+	font-size:					12px;
+	font-weight:				bold;
+	border-bottom:				1px solid #666;
+	padding:					0 0 3px 0;
+	margin:						0 0 3px 0;
+}
+
+#body .bodyWrap .project a {
+	color:						#B5E06B;
+	text-decoration:			none;
+}
+
+.orange {
+	color:						#F39B18;
+}
+
+#body .bodyWrap .project .left {
+	float:						left;
+	width:						65px;
+}
+
+#body .bodyWrap .project .right {
+	float:						left;
+	text-align:					right;
+	width:						244px;
+}
+
+#body .bodyWrap .project a:hover {
+	color:						#f1f1f1;
+	border-bottom:				1px solid #B5E06B;
+}
+
+#body .bodyWrap #contactLeft {
+	float:						left;
+	width:						354px;
+}
+
+#body .bodyWrap #contactRight {
+	float:						right;
+	width:						396px;
+	height:						396px;
+	padding:					8px 0 0 24px;
+	font-size:					10px;
+	background:					url(contact_bg.gif) no-repeat 12px 0;
+}
+
+#body .bodyWrap #contactRight .title, #body .bodyWrap #contactThanks .title {
+	font-family: 				Arial, Helvetica, sans-serif;
+	color:						#F39B18;
+	font-size:					16px;
+	font-weight:				bold;
+	border-bottom:				1px solid #666;
+	padding:					0 0 3px 0;
+	margin:						0 0 3px 0;
+	width:						94%;
+}
+
+#body .bodyWrap #contactThanks .title {
+	border:						0px;
+}
+
+#aboutContent div.bodyWrap, #contactContent div.bodyWrap {
+	line-height:				20px;
+	font-size:					12px;
+}
+
+#aboutContent b.orange {
+	display:					block;
+	font-size:					14px;
+	border-bottom:				1px solid #333;
+	padding:					0 0 3px 0;
+	margin:						0 0 6px 0;
+}
+
+#aboutContent #aboutLeaf {
+	background:					url(about_leaf.jpg) no-repeat top right;
+	height:						259px;
+}
+
+#aboutContent div.list {
+	line-height:				24px;
+}
+
+#aboutContent .topleft {
+	width:						490px;
+}
+
+#aboutContent .botleft {
+	width:						394px;
+}
+
+
+#overlay {
+	display:					none;
+	background-image: 			url(overlay.png);
+	position:					absolute;
+	top:						0px;
+	left:						0px;
+	z-index:					90;
+	width:						100%;
+	height:						100%;
+}
+
+#hiddenms, #hiddenmsw, #hiddenaw, #hiddenrz, #hiddenwi {
+	display:					none;
+	position:					absolute;
+	top:						0px;
+	left:						0px;
+	width:						531px;
+	padding:					12px 20px 20px 20px;
+	background:					#1D2419;
+	border:						8px solid #fff;
+	z-index:					99;
+}
+
+.hiddenBox {
+	font-size:					11px;
+	color:						#ccc;			
+}
+
+.hiddenBox .title {
+	font-size:					22px;
+	font-weight:				normal;
+	color:						#F39B18;
+	padding:					0 0 3px 0;
+	margin:						0 0 3px 0;
+}
+
+.hiddenBox .image {
+	width:						531px;
+	height:						268px;
+	margin:						10px 0;
+}
+
+.hiddenBox ul {
+	font-size:					10px;
+	margin:						0;
+	padding:					0 0 0 25px;
+}
+
+.hiddenBox .left {
+	float:						left;
+	width:						360px;
+	line-height:				16px;
+}
+
+.hiddenBox .right {
+	float:						left;
+	margin:						32px 0 0 0;
+	text-align:					right;
+	width:						60px;
+}
+
+.hiddenBox a, #aboutContent a {
+	color:						#B5E06B;
+	text-decoration:			none;
+}
+
+.hiddenBox a:hover, #aboutContent a:hover {
+	color:						#f1f1f1;
+	border-bottom:				1px solid #B5E06B;
+}
+
+#copyright {
+	float:						left;
+	width:						400px;
+	height:						60px;
+	font-size:11px;
+}
+
+#validation {
+	float:						right;
+	width:						130px;
+}
+
+#validation a {
+	display:					block;
+	float:						left;
+	height:						29px;
+}
+
+.clear {
+	font-size:					0px;
+	line-height:				0px;
+	height:						0px;
+	width:						0px;
+	clear:						both;
+}
+
+.sm {
+	font-size:					9px;
+}
+
+#dark {
+	display:					none;
+	position:					absolute;
+	overflow:					hidden;
+	top:						1px;
+	left:						1px;
+	background:					#000;
+	width:						99.9%;
+	height:						99.9%;
+	z-index:					1000;
+}
+
+#thanks, .cnt {
+	display:					none;
+	font-size:					11px;
+	line-height:				16px;
+}
+
+.error{
+  color:white;
+  border:1px solid #000;
+  background-color:#C00;
+  width:auto;
+  text-align:center;
+  font-weight:bold;
+}

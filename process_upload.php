@@ -1,6 +1,5 @@
 <?php
-
-require_once 'Excel/reader.php';
+require_once __DIR__ . '/simplexlsx.class.php';
 //error_reporting(0);
 
 $link = mysql_connect('localhost', 'root', '');
@@ -27,52 +26,38 @@ $link = mysql_connect('localhost', 'root', '');
 			
 			//echo "<br>update $isi_job == $proses_job === $perilaku_job === $produk_job";
 			$update_bobot = "update job_bobot_new set proses = $proses_job, perilaku = $perilaku_job, produk = $produk_job where unit_type = '$unit_type' and jobfunction = '$isi_job'";
-			echo $update_bobot;
+			//echo $update_bobot;
 			mysql_query($update_bobot);
 			
 				
 		}
 
-// ExcelFile($filename, $encoding);
-//$data = new Spreadsheet_Excel_Reader();
-$data = new Spreadsheet_Excel_Reader($_FILES['file_source']['tmp_name']);
+if ( $xlsx = SimpleXLSX::parse( $_FILES['file_source']['tmp_name'] ) ) {
 
-// Set output Encoding.
-$data->setOutputEncoding('CP1251');
-//$data->read('jxlrwtest.xls');
-$baris = $data->rowcount($sheet_index=0);
 
-for ($i=1; $i<=$baris; $i++)
-{
-  // membaca data excel dari (kolom ke-1)
-	$questions = $data->val($i, 1);
-	$sola = $data->val($i, 2);
-	$solb = $data->val($i, 3);
-	$solc = $data->val($i, 4);
-	$sold = $data->val($i, 5);
-	$sole = $data->val($i, 6);
-	$solf = $data->val($i, 7);
-	$solg = $data->val($i, 8);
-	$solh = $data->val($i, 9);
-	$solution = $data->val($i, 10);
-	$level = $data->val($i, 11);
-	$difficulty = $data->val($i, 12);
-	$source = $data->val($i, 13);
-	$mandatory = $data->val($i, 14);
-	$type = $data->val($i, 15);	
-
-  // setelah data dibaca, sisipkan ke dalam tabel mhs
-  $query = "INSERT INTO question_temp values ('$questions', '$sola', '$solb','$solc', '$sold', '$sole','$solf', '$solg', '$solh','$solution', '$level', '$difficulty','$source', '$mandatory', '$type')";
-  $hasil = mysql_query($query);
-
-  // jika proses insert data sukses, maka counter $sukses bertambah
-  // jika gagal, maka counter $gagal yang bertambah
-  if ($hasil) $sukses++;
-  else $gagal++;
+		list( $cols, ) = $xlsx->dimension();
+		$date = date("Y-m-d H:i:s");
+		foreach ( $xlsx->rows() as $k => $r ) {
+			if ($k == 0) continue; // skip first row
+			for ( $i = 0; $i < $cols; $i ++ ) {
+					//echo '<td>' . ( ( isset( $r[ $i ] ) ) ? $r[ $i ] : '&nbsp;' ) . '</td>';
+					$kolom = $r[ $i ];
+					if($i==0)
+					{
+						$isi = "('$kolom',";
+					}else if(($i+1)==$cols){
+						$isi .= "'$kolom',NOW())";
+					}else{
+						$isi .= "'$kolom',";
+					}
+				}
+				$query = "insert into question_temp values$isi";
+				$hasil = mysql_query($query)or die($query);;
+			}		
+	} else {
+		echo SimpleXLSX::parse_error();
+	}
   
-  
-}
-
 echo "berhasil memasukan $sukses data";
 
 ?>

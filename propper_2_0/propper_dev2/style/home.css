@@ -1,0 +1,178 @@
+/* =============================================================================
+Buffalo - Home
+============================================================================= */
+
+
+
+p.link {margin: 16px 0 0 0;}
+
+/* Introduction
+============================================================================= */
+
+h2#introduction {
+  background: url(../img/typography/introductions/home.gif) 0 0 no-repeat;
+  width: 578px;
+  height: 56px;
+}
+
+  h2#introduction a {
+    display: block;
+    width: 186px;
+    height: 19px;
+    padding: 0 0 0 109px;
+  }
+
+/* Featured work
+============================================================================= */
+
+.middle {
+  margin: 25px 0 0 0;
+  border: none;
+}
+
+h3#featured_work {
+  background: url(../img/typography/section_headings/featured_work.gif) 0 0 no-repeat;
+  width: 96px;
+  margin: 3px 0 0 0;
+  float: left;
+}
+
+p.view_work {
+  width: 194px;
+  padding: 0 0 0 19px;
+  margin: 0;
+  float: right;
+}
+
+div.project {
+  width: 200px;
+  margin: 0 30px 0 0;
+  float: left;
+}
+
+div.end {margin: 0;}
+
+div.cruvee_project {height: 165px;}
+
+.preview_container {
+  background: url(../img/backgrounds/work/preview.gif) 0 0 no-repeat;
+  width: 200px;
+  height: 150px;
+  margin: 15px 0 0 0;
+}
+
+.preview {margin: 3px 0 0 3px;}
+
+h4 {
+  font: normal 14px/17px Arial, Helvetica, sans-serif;
+  margin: 8px 0 0 0;
+}
+
+p.large {
+  color: #5c5c56;
+  font: normal 12px/17px Arial, Helvetica, sans-serif;
+  margin: 9px 0 0 0;
+}
+
+/*
+Theme: inphecthyuz
+Author: Infected-FX
+URL: www.infectedfx.net
+Country: Mexico
+*/
+
+table {
+	border-spacing:1px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	background-color:#E7E7E7;
+	color: #555;
+}
+
+caption {
+	font-weight: bold;
+	background: #50ADEA url(http://infectedfx.net/css/tables/corner.gif) no-repeat right top;
+	border-bottom:2px solid #1975d7;
+	color: #FFF;
+	text-transform:uppercase;
+	padding:15px;
+}
+
+td, th {
+	padding: 2px;
+}
+
+thead th {
+	text-align: center;
+	background: #EEE;
+	color: #666;
+	border: 1px solid #FFF;
+	text-transform:uppercase;
+}
+
+tbody th {
+	font-weight: bold;
+}
+
+tbody tr		{
+	background-color:#FFF; 
+	text-align:left;
+	}
+tbody tr.odd 	{
+	background: #f9f9f9;
+	border-top:1px solid #FFF;
+}
+
+tbody th a:link, tbody th a:visited{
+	color:#96D030;
+	padding:3px 0px 0px 0px;
+	}
+tbody th a:hover{
+	color:#FF8601;
+	}
+
+tbody tr td { 
+	height:50px;
+	background: #FFF;
+	border: 1px solid #FFF;
+	}
+
+tbody tr.odd td{ 
+	background: #f9f9f9;
+	border-top:1px solid #FFF;
+	}
+
+table td a:link, table td a:visited {
+	color: #1975D7;
+	text-decoration: none;
+}
+
+table td a:hover {
+	color: #50ADEA;
+	border-bottom:2px solid #8FD5FF;
+	text-decoration: none ;
+}
+tbody td a[href="http://www.infectedfx.net"] {
+	margin: 0 auto;
+	height: 15px;
+	background: url(http://infectedfx.net/css/tables/ok.gif) no-repeat;
+	border-bottom: 0;
+	padding:3px 0px 0px 18px;
+	font-weight:bold;
+	color:#FF8601;
+}
+
+table a[title^="Download"] { 
+	background: url(http://infectedfx.net/css/tables/down.gif) no-repeat center;
+	padding:20px 0px 0px 15px;
+}
+
+tfoot th, tfoot td {
+	background-color:#E7E7E7; padding:10px;
+	text-align:center; 
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:22px; font-weight:bold; font-style:italic;
+	border-bottom:3px solid #CCC;
+	border-top:1px solid #DFDFDF;
+}
+

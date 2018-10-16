@@ -1,0 +1,108 @@
+/*
+Theme: inphecthyuz
+Author: Infected-FX
+URL: www.infectedfx.net
+Country: Mexico
+*/
+
+table {
+	border-spacing:1px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	background-color:#E7E7E7;
+	color: #111;
+	width:98%;
+}
+
+caption {
+	font-weight: bold;
+	background: #50ADEA url(http://infectedfx.net/css/tables/corner.gif) no-repeat right top;
+	border-bottom:2px solid #1975d7;
+	color: #FFF;
+	text-transform:uppercase;
+	padding:15px;
+}
+
+th, td {
+	padding: 2px;
+}
+
+thead th {
+	text-align: center;
+	background: #EEE;
+	color: #666;
+	border: 1px solid #FFF;
+	text-transform:uppercase;
+}
+
+tbody th {
+	font-weight: bold;
+}
+
+tbody th.regional {
+	background-color:#CCC;
+}
+
+tbody tr		{
+	background-color:#FFF; 
+	text-align:left;
+	}
+tbody tr.odd 	{
+	background: #f9f9f9;
+	border-top:1px solid #FFF;
+}
+
+tbody th a:link, tbody th a:visited{
+	color:#96D030;
+	padding:3px 0px 0px 0px;
+	}
+tbody th a:hover{
+	color:#FF8601;
+	}
+
+tbody tr td { 
+	background: #FFF;
+	border: 1px solid #FFF;
+	}
+
+tbody tr.odd td{ 
+	background: #f9f9f9;
+	border-top:1px solid #FFF;
+	}
+
+table td a:link, table td a:visited {
+	color: #1975D7;
+	text-decoration: none;
+}
+
+table td a:hover {
+	color: #50ADEA;
+	border-bottom:2px solid #8FD5FF;
+	text-decoration: none ;
+}
+
+table tbody tr:hover {
+	color: #50ADEA;
+	border-bottom:2px solid #8FD5FF;
+	text-decoration: none ;
+}
+
+tfoot th, tfoot td {
+	background-color:#E7E7E7; padding:3px;
+	text-align:center; 
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:11px; 
+	font-weight:bold; 
+	border-bottom:1px solid #CCC;
+	text-align:right;
+}
+
+button {
+    background: url(submit.gif) 0 0 no-repeat;
+    height: 26px;
+    width: 100px;
+    margin: 16px 0 0 0;
+    float: left;
+  }
+  
+button:hover {background-position: 0 -27px;}

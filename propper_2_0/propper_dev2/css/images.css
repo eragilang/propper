@@ -1,0 +1,153 @@
+/*-----------------------------------------------
+//	PacificFrog.com Images Stylesheet
+//	Author:   		Mark Pitman (mark at leafspan dot com)
+//	Media Type: 	Screen
+//	Version Date:  	Oct 9th, 2007
+-------------------------------------------------*/
+
+
+#header {
+	background:					url(../image/head_bg.jpg) repeat-x 0 64px;
+}
+
+#logo {
+	background:					url(../image/logo.gif) no-repeat 0 0;
+}
+
+#nav a#grapari {
+	width:						98px;
+	background:					url(../image/report-top.gif) no-repeat 0px 0px;
+}
+
+#nav a#grapari:hover {
+	background:					url(../image/report-top.gif) no-repeat 0px -63px;
+}
+
+#nav a#callcenter {
+	width:						99px;
+	background:					url(../image/report-top.gif) no-repeat -98px 0px;
+}
+
+#nav a#callcenter:hover {
+	background:					url(../image/report-top.gif) no-repeat -98px -63px;
+}
+
+#nav a#gerai {
+	width:						99px;
+	background:					url(../image/report-top.gif) no-repeat -197px 0px;
+}
+
+#nav a#gerai:hover {
+	background:					url(../image/report-top.gif) no-repeat -197px -63px;
+}
+
+#nav a#plasa {
+	width:						99px;
+	background:					url(../image/report-top.gif) no-repeat -308px 0px;
+}
+
+#nav a#plasa:hover {
+	background:					url(../image/report-top.gif) no-repeat -308px -63px;
+}
+
+#validation a.xhtml {
+	width:						69px;
+	background:					url(../image/valid.gif) no-repeat 0 0;
+}
+
+#validation a.xhtml:hover {
+	background:					url(../image/valid.gif) no-repeat 0 -29px;
+}
+
+#validation a.css {
+	width:						61px;
+	background:					url(../image/valid.gif) no-repeat -69px 0;
+}
+
+#validation a.css:hover {
+	background:					url(../image/valid.gif) no-repeat -69px -29px;
+}
+
+#headLeft {
+	background:					url(../image/home_head_left.png) no-repeat 0 27px;
+}
+
+#headSplit {
+	background:					url(../image/home_head_split.png) no-repeat 0 0;
+}
+
+#headRight {
+	padding:					35px 0 0 0;
+}
+
+#body h1.about {
+	background:					url(../image/about_header.gif) no-repeat 0 0;
+}
+
+#body h1.portfolio {
+	background:					url(../image/portfolio_header.gif) no-repeat 0 0;
+}
+
+#body h1.contact {
+	background:					url(../image/contact_header.gif) no-repeat 0 0;
+}
+
+
+
+#body div.bodyWrap #ms {
+	background:					url(../image/pf_ms_bar.gif) no-repeat 0 0;
+}
+
+#body div.bodyWrap #msw {
+	background:					url(../image/pf_msw_bar.gif) no-repeat 0 0;
+}
+
+#body div.bodyWrap #rz {
+	background:					url(../image/pf_rz_bar.gif) no-repeat 0 0;
+}
+
+#body div.bodyWrap #aw {
+	background:					url(../image/pf_aw_bar.gif) no-repeat 0 0;
+}
+
+#body div.bodyWrap #wi {
+	background:					url(../image/pf_wi_bar.gif) no-repeat 0 0;
+}
+
+#body div.bodyWrap div#greyms {
+	background:					url(../image/pf_grey_ms_bar.gif) no-repeat 0 0;
+}
+
+#body div.bodyWrap div#greymsw {
+	background:					url(../image/pf_grey_msw_bar.gif) no-repeat 0 0;
+}
+
+#body div.bodyWrap div#greyrz {
+	background:					url(../image/pf_grey_rz_bar.gif) no-repeat 0 0;
+}
+
+#body div.bodyWrap div#greyaw {
+	background:					url(../image/pf_grey_aw_bar.gif) no-repeat 0 0;
+}
+
+#body div.bodyWrap div#greywi {
+	background:					url(../image/pf_grey_wi_bar.gif) no-repeat 0 0;
+}
+
+input.login{
+	background:url(../image/login.gif) no-repeat #FFF;
+    color:#0B0B0B;
+	border:0;
+	width:65px;
+	float:left;
+	padding: 5px 0;
+	height:24px;
+	cursor:pointer;
+	font:bold 85% Tahoma, Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+}
+
+
+
+
+ 
